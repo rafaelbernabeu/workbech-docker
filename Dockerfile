@@ -27,8 +27,11 @@ RUN apt-get install maven -y
 # NodeJS
 RUN apt-get install nodejs -y
 
+# NPM
+RUN apt-get install npm -y
+
 # Sublime Text
-RUN chmod +x /tmp/setups/sublime-text/setup && ./tmp/setups/sublime-text/setup
+#RUN chmod +x /tmp/setups/sublime-text/setup && ./tmp/setups/sublime-text/setup
 
 # IntelliJ IDEA
 RUN chmod +x /tmp/setups/intellij/setup && ./tmp/setups/intellij/setup
