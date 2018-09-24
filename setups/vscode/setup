@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mv /tmp/setups/vscode/run /home/developer/vscode
+apt-get install libxss1 libnotify4 libnss3 libxkbfile1 libgconf-2-4 libsecret-1-0 libasound2 -y
+dpkg -i /tmp/setups/vscode/code_1.27.2-1536736588_amd64.deb
+chmod +x /home/developer/vscode
+
+#Hack from: https://github.com/Microsoft/vscode/issues/3451
+sed -i 's/BIG-REQUESTS/_IG-REQUESTS/' /usr/lib/x86_64-linux-gnu/libxcb.so.1
+
+

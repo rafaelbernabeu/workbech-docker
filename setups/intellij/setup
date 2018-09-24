@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir /home/developer/tools 
+tar -xzf /tmp/setups/intellij/ideaIC-2018.2.4.tar.gz -C /home/developer/tools/
+ln -s /home/developer/tools/idea-IC-182.4505.22/bin/idea.sh /home/developer/idea
+chmod +x /home/developer/idea
+apt-get install libgtk-3-0 libxext6 libxss1 libxext-dev libxrender-dev libxtst-dev -y

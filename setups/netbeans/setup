@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mv /tmp/setups/netbeans/run /home/developer/netbeans
+chmod +x /home/developer/netbeans
+
+apt-get install libxext-dev libxrender-dev libxtst-dev -y
+
+wget http://download.netbeans.org/netbeans/8.0.1/final/bundles/netbeans-8.0.1-javase-linux.sh -O /tmp/netbeans.sh -q
+chmod +x /tmp/netbeans.sh
+echo 'Installing netbeans'
+/tmp/netbeans.sh --silent --state /tmp/setups/netbeans/state.xml
+
