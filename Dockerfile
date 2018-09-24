@@ -1,10 +1,8 @@
 FROM ubuntu:18.04
 MAINTAINER Rafael Bernabeu "rbbernabeu@gmail.com"
-
 COPY setups/ /tmp/setups/
 
 # --- GLOBAL CONFIG ---
-
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list   
 RUN apt-get update && apt-get install -y software-properties-common apt-transport-https apt-utils wget curl
 
