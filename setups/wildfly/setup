@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /tmp/setups/wildfly
+tar -xzf wildfly-14.0.1.Final.tar.gz -C /home/developer/tools/

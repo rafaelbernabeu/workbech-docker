@@ -1,0 +1,5 @@
+#!/bin/bash
+
+add-apt-repository ppa:gnome3-team/gnome3
+apt-get update
+apt-get install nautilus -y

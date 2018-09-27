@@ -9,8 +9,11 @@ RUN apt-get update && apt-get install -y software-properties-common apt-transpor
 # Create user developer
 RUN chmod +x /tmp/setups/create-user-developer && /tmp/setups/create-user-developer
 
+# Nautilus
+RUN chmod +x /tmp/setups/nautilus/setup && ./tmp/setups/nautilus/setup
+
 # Firefox
-#RUN apt-get install firefox -y
+RUN apt-get install firefox -y
 
 # Chromium
 RUN apt-get install chromium-browser -y
@@ -31,7 +34,7 @@ RUN apt-get install nodejs -y
 RUN apt-get install npm -y
 
 # Sublime Text
-#RUN chmod +x /tmp/setups/sublime-text/setup && ./tmp/setups/sublime-text/setup
+RUN chmod +x /tmp/setups/sublime-text/setup && ./tmp/setups/sublime-text/setup
 
 # IntelliJ IDEA
 RUN chmod +x /tmp/setups/intellij/setup && ./tmp/setups/intellij/setup
@@ -41,6 +44,15 @@ RUN chmod +x /tmp/setups/vscode/setup && ./tmp/setups/vscode/setup
 
 # Netbeans
 #RUN chmod +x /tmp/setups/netbeans/setup && ./tmp/setups/netbeans/setup
+
+# WildFly
+RUN chmod +x /tmp/setups/wildfly/setup && ./tmp/setups/wildfly/setup
+
+# Squirrel-SQL
+RUN java -jar /tmp/setups/squirrel/squirrel-sql-snapshot-20180918_2153-standard.jar /tmp/setups/squirrel/setup
+
+# Postman
+RUN chmod +x /tmp/setups/postman/setup && ./tmp/setups/postman/setup
 
 # Clean
 RUN apt-get install -f -y && apt-get clean && rm -rf /tmp/* && rm -rf /var/lib/apt/lists/*
