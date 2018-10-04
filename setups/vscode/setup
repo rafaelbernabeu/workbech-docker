@@ -2,6 +2,8 @@
 
 mv /tmp/setups/vscode/run /home/developer/vscode
 apt-get install libxss1 libnotify4 libnss3 libxkbfile1 libgconf-2-4 libsecret-1-0 libasound2 -y
+cd /tmp/setups/vscode/
+wget https://az764295.vo.msecnd.net/stable/f46c4c469d6e6d8c46f268d1553c5dc4b475840f/code_1.27.2-1536736588_amd64.deb
 dpkg -i /tmp/setups/vscode/code_1.27.2-1536736588_amd64.deb
 chmod +x /home/developer/vscode
 

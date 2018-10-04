@@ -7,7 +7,7 @@ RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
 RUN apt-get update && apt-get install -y software-properties-common apt-transport-https apt-utils wget curl
 
 # Create user developer
-RUN chmod +x /tmp/setups/create-user-developer && /tmp/setups/create-user-developer
+RUN chmod +x /tmp/setups/create-user-developer && ./tmp/setups/create-user-developer
 
 # Nautilus
 RUN chmod +x /tmp/setups/nautilus/setup && ./tmp/setups/nautilus/setup
@@ -49,7 +49,7 @@ RUN chmod +x /tmp/setups/vscode/setup && ./tmp/setups/vscode/setup
 RUN chmod +x /tmp/setups/wildfly/setup && ./tmp/setups/wildfly/setup
 
 # Squirrel-SQL
-RUN java -jar /tmp/setups/squirrel/squirrel-sql-snapshot-20180918_2153-standard.jar /tmp/setups/squirrel/setup
+RUN chmod +x /tmp/setups/squirrel/setup && ./tmp/setups/squirrel/setup
 
 # Postman
 RUN chmod +x /tmp/setups/postman/setup && ./tmp/setups/postman/setup

@@ -1,6 +1,8 @@
 #!/bin/bash
 
-mkdir /home/developer/tools 
+mkdir /home/developer/tools
+cd /tmp/setups/intellij/
+wget https://download-cf.jetbrains.com/idea/ideaIC-2018.2.4.tar.gz
 tar -xzf /tmp/setups/intellij/ideaIC-2018.2.4.tar.gz -C /home/developer/tools/
 ln -s /home/developer/tools/idea-IC-182.4505.22/bin/idea.sh /home/developer/intellij
 chmod +x /home/developer/intellij
