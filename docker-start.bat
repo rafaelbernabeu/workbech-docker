@@ -1,1 +1,1 @@
-docker start -d workbench
+cmd /k docker start workbench
