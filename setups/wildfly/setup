@@ -3,3 +3,4 @@
 cd /tmp/setups/wildfly
 wget http://download.jboss.org/wildfly/14.0.1.Final/wildfly-14.0.1.Final.tar.gz
 tar -xzf wildfly-14.0.1.Final.tar.gz -C /home/developer/tools/
+chmod +x /home/developer/tools/wildfly-14.0.1.Final/bin/*.sh       
