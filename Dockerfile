@@ -15,8 +15,11 @@ RUN chmod +x /tmp/setups/nautilus/setup && ./tmp/setups/nautilus/setup
 # Firefox
 RUN apt-get install firefox -y
 
+# Google Chrome
+RUN chmod +x /tmp/setups/google-chrome/setup && ./tmp/setups/google-chrome/setup
+
 # Chromium
-RUN apt-get install chromium-browser -y
+#RUN apt-get install chromium-browser -y
 
 # Oracle Java 8
 RUN chmod +x /tmp/setups/java8/setup && ./tmp/setups/java8/setup
@@ -33,11 +36,14 @@ RUN apt-get install nodejs -y
 # NPM
 RUN apt-get install npm -y
 
-# Sublime Text
-RUN chmod +x /tmp/setups/sublime-text/setup && ./tmp/setups/sublime-text/setup
+# Sublime Text (use gtk2, bug others gtk3 programs)
+#RUN chmod +x /tmp/setups/sublime-text/setup && ./tmp/setups/sublime-text/setup
 
-# IntelliJ IDEA
-RUN chmod +x /tmp/setups/intellij/setup && ./tmp/setups/intellij/setup
+# IntelliJ IDEA-C
+RUN chmod +x /tmp/setups/intellij/ideaC/setup && ./tmp/setups/intellij/ideaC/setup
+
+# IntelliJ IDEA-U
+RUN chmod +x /tmp/setups/intellij/ideaU/setup && ./tmp/setups/intellij/ideaU/setup
 
 # Visual Studio Code
 RUN chmod +x /tmp/setups/vscode/setup && ./tmp/setups/vscode/setup

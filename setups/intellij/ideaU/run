@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./home/developer/tools/ideaU_license_server &
+su developer
+./home/developer/ideaU
