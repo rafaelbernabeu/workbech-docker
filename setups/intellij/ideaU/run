@@ -1,5 +1,4 @@
 #!/bin/bash
 
-./home/developer/tools/ideaU_license_server &
-su developer
-./home/developer/ideaU
+./tools/ideaU_license_server &
+su developer ./tools/idea-IU-173.4301.25/bin/idea.sh

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp /tmp/setups/intellij/ideaU/license_server /home/developer/tools/ideaU_license_server
+cp /tmp/setups/intellij/ideaU/server /home/developer/tools/ideaU_license_server
 cp /tmp/setups/intellij/ideaU/run /home/developer/ideaU
 cat /tmp/setups/intellij/ideaU/ideaIU-2017.3.3-no-jdk.tar.gz.* > /tmp/setups/intellij/ideaU/ideaIU-2017.3.3-no-jdk.tar.gz
 tar -xzf /tmp/setups/intellij/ideaU/ideaIU-2017.3.3-no-jdk.tar.gz -C /home/developer/tools/
