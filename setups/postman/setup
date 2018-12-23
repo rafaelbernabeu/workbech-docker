@@ -5,3 +5,4 @@ wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
 tar -xzf postman.tar.gz -C /home/developer/tools
 ln -s /home/developer/tools/Postman/Postman /usr/bin/postman
 ln -s /home/developer/tools/Postman/Postman /home/developer/postman
+apt-get install libgtk2.0.0 -y
