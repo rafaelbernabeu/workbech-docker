@@ -1,1 +1,1 @@
-cmd /k docker attach -ti workbench
+cmd /k docker attach workbench
