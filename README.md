@@ -16,8 +16,8 @@ _________
 For Linux Hosts:
 
 Run this command on the host machine to allow clients to connect from any host:
-$ xhost +
+xhost +
 
 Execute docker run with the argumments:
-# docker run ..... -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix .....
+docker run ..... -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix .....
 
