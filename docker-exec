@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker exec -ti -u 0 workbench /bin/bash
+$SHELL
