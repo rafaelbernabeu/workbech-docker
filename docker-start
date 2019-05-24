@@ -1,4 +1,5 @@
 #!/bin/bash
 
+xhost +
 sudo docker start workbench
 $SHELL

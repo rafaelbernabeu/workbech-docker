@@ -12,3 +12,5 @@ Then create a user to access from '%' (any ip, 0.0.0.0)
 
 CREATE USER 'root'@'%' IDENTIFIED BY 'new-password-here';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'new-password-here';
