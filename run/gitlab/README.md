@@ -1,0 +1,1 @@
+Check: https://docs.gitlab.com/omnibus/docker/README.html
