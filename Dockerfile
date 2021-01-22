@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Rafael Bernabeu "rbbernabeu@gmail.com"
 COPY setups/ /tmp/setups/
 
@@ -43,10 +43,10 @@ RUN apt-get install npm -y
 RUN chmod +x /tmp/setups/sublime-text/setup && ./tmp/setups/sublime-text/setup
 
 # IntelliJ IDEA-C
-RUN chmod +x /tmp/setups/intellij/ideaC/setup && ./tmp/setups/intellij/ideaC/setup
+#RUN chmod +x /tmp/setups/intellij/ideaC/setup && ./tmp/setups/intellij/ideaC/setup
 
 # IntelliJ IDEA-U
-RUN chmod +x /tmp/setups/intellij/ideaU/setup && ./tmp/setups/intellij/ideaU/setup
+#RUN chmod +x /tmp/setups/intellij/ideaU/setup && ./tmp/setups/intellij/ideaU/setup
 
 # Visual Studio Code
 RUN chmod +x /tmp/setups/vscode/setup && ./tmp/setups/vscode/setup
